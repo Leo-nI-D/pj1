@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  background: #e0e0e0;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.header .menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu-link {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #19b6b6;
+}
+.header .menu-link:hover {
+  color: #085353;
+}
+.header .menu-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: 40px;
+  transform-origin: center;
+  transform: scaleX(0);
+  background: #085353;
+  transition: 0.3s;
+}
+.header .menu-link:hover::after {
+  transform: scaleX(1);
+}
+
+.main .hero {
+  background: url(../img/hero-bg.jpg) center no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+.main .hero p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.main .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.main .img-container img {
+  width: 300px;
+}
+.main .wrapper {
+  display: flex;
+  justify-content: center;
+}
